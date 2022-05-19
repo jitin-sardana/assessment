@@ -13,7 +13,7 @@ function App() {
   return (
     <Container>
       <Grid >
-        <Loading loading={isLoading} />
+        {isLoading && <Loading loading={isLoading} /> }
         <TopBar />
         <Routes>
           <Route path="/" element={<Cats />} />
